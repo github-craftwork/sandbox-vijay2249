@@ -37,7 +37,7 @@ jobs:
     name: output
     runs-on: ubuntu
     outputs:
-      output1: ${{ steps.step1.outputs.test }}
+      output1: ${{ steps.step1.outputs.driver }}
     steps:
       - id: step1
         run: echo "driver=max-verstappen" >> $GITHUB_OUTPUT
