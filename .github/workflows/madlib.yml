@@ -1,11 +1,11 @@
-# madlib.yml
 on: issues
-name: Create MadLibs in GitHub Issues
+name: Template Variables in Markdown
 jobs:
-  madlib:
+  markdown:
+    name: markdown-marker
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: bdougie/variables-in-markdown@v1.0.0
+    - uses: bdougie/variables-in-markdown@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
